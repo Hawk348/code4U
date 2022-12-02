@@ -1,4 +1,4 @@
-package objects.student;
+package objects.realistic;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -40,6 +40,7 @@ public class SchoolApp {
         System.out.print( "Quel est votre nom? > " );
         player = register( console.nextLine() ); // initialiser l'objet Student
         System.out.println();
+
 
         while ( joinClass() ) {} // tout se passe dans la méthode joinClass() : boolean
         if ( player.courses.size() == 0 ) // n'ont pas choisi de cours
